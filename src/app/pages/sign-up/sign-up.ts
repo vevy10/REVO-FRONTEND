@@ -17,22 +17,25 @@ import { ButtonComponent as AppButton1 } from '../../utils/button-1/button-1';
       </section>
 
       <!-- FORMULAIRE -->
-      <form class="flex flex-col w-80 gap-6">
-        <app-input-field
-          type="text"
-          id="name"
-          name="name"
-          label="Nom"
-          [required]="true">
-        </app-input-field>
+      <form class="flex flex-col w-120 gap-6">
 
-        <app-input-field
-          type="text"
-          id="manager"
-          name="manager"
-          label="Manager"
-          [required]="true">
-        </app-input-field>
+        <div class="flex justify-between gap-6">
+           <app-input-field
+            type="text"
+            id="name"
+            name="name"
+            label="Nom"
+            [required]="true">
+          </app-input-field>
+
+          <app-input-field
+            type="text"
+            id="manager"
+            name="manager"
+            label="Manager"
+            [required]="true">
+          </app-input-field>
+        </div>
 
         <app-input-field
           type="text"
