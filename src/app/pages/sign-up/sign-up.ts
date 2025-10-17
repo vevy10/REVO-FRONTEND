@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputField } from '../../utils/input-field/input-field';
+import { ButtonComponent as AppButton1 } from '../../utils/button-1/button-1';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [CommonModule, InputField],
+  imports: [CommonModule, InputField, AppButton1],
   template: `
     <main class="flex flex-col items-center justify-center min-h-screen font-poppins text-gray-900 bg-gradient-to-br from-gray-50 to-gray-200">
       <!-- HEADER -->
@@ -82,12 +83,13 @@ import { InputField } from '../../utils/input-field/input-field';
         </app-input-field>
 
         <!-- BOUTON INSCRIPTION -->
-        <button
-          type="submit"
-          class="bg-gradient-to-r from-red-600 to-red-700 text-white text-base font-light uppercase py-3 rounded-xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-400/40"
-        >
-          Créer un compte
-        </button>
+        <app-button-1 
+          label="S'inscrire" 
+          type="submit" 
+          colorFrom="red-600" 
+          colorTo="red-700"
+          size="w-full py-3"
+        ></app-button-1>
 
         <!-- LIEN VERS LOGIN -->
         <p class="text-center text-sm font-light text-gray-600">
