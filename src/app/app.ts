@@ -4,7 +4,8 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.html',
+  template: `<h1 class="text-3xl font-bold text-blue-600">Hello Tailwind 🚀</h1>
+`,
   styleUrl: './app.css'
 })
 export class App {
